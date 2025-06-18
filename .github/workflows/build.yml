@@ -1,0 +1,15 @@
+name: Build success on PR
+
+on:
+  pull_request:
+  branches:
+    -master
+    -main
+    
+  jobs:
+    build:
+    name:Build the Project
+    runs-on : ubantu-latest
+    steps:
+    -uses : actions/cheak
+
